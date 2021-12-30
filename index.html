@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <link rel = "stylesheet" href = "./assets/css/style.css" />
+        <link rel = "stylesheet" href = "./assets/css/styles.css" />
         <meta charset = "UTF-8" />
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
         <title>Portfolio of Aimee Truong</title>
@@ -9,11 +9,8 @@
 <body>
 
 
-    <!-- Header -->
+<!-- Header -->
     <header>
-        <h1>
-            <a href = "/">PORTFOLIO</a>
-        </h1>
             <nav>
                 <ul>
                     <li>
@@ -31,17 +28,25 @@
 <!-- End Header -->
 
 
+<!-- Name Section -->
+<h1>
+    <a href = "/" class = "title-name">Aimee Truong</a>
+</h1>
+<!-- End Name Section -->
+
+
 <!-- Main Sections -->
     <!-- About Me Section -->
     <section id = "about-me">
         <div>
-            <h2>About Me</h2>
+            <h2 class = "section-title">About Me</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id asperiores dolores aperiam eaque. Mollitia dignissimos 
                 labore earum, exercitationem laborum odio animi error numquam? Temporibus officiis illum, earum ullam odio pariatur.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos 
                 officia tempore odit amet ut. Quas sit quae, iusto tempora incidunt in hic vitae aliquid, blanditiis, vel quos ullam iure!
             </p>
+            <img alt = "Headshot of Aimee">
         </div>
     </section>
     <!-- End About Me Section -->
@@ -49,25 +54,25 @@
     <!-- Works Section -->
     <section id = "my-works">
         <div>
-            <h2>My Works</h2>
-            <!-- First Work -->
-            <section>
+            <h2 class = "section-title">My Works</h2>
+            <!-- First Work [best work]-->
+            <section id = "best work">
                 <img alt = "first work link">
                 <a href = "">Run Buddy</a>
-            </section>
-            <!-- End First Work -->
+            </section class = "work">
+            <!-- End First Work [best work]-->
             <!-- Second Work -->
-            <section>
+            <section class = "work">
                 <img alt = "second work link">
             </section>
             <!-- End Second Work -->
             <!-- Third Work -->
-            <section>
+            <section class = "work">
                 <img alt = "third work link">
             </section>
             <!-- End Third Work -->
             <!-- Forth Work -->
-            <section>
+            <section class = "work">
                 <img alt = "forth work link">
             </section>
             <!-- End Forth Work -->           
@@ -78,11 +83,13 @@
     <!-- To Contact Section -->
     <section id = "contact-me">
         <div>
-            <h2>Contact Me</h2>
+            <h2 class = "section-title">Contact Me</h2>
             <img alt = "contact image">
-            <form>
-                <label for = "contact-name">Your Name</label>
-                    <input type = "text" id = "contact-name" placeholder = "Name" />
+            <form class = "contact-form">
+                <label for = "name">Your Name</label> 
+                    <input type = "text" placeholder = "Your Name" name = "name" id = "name" class = "form-input"/> 
+                <label for = "email">Enter email address:</label>
+                    <input type = "email" placeholder = "Email Address" name = "email" id = "email" class = "form-input"/>  
                 <label for = "contact-message">Message</label>
                     <textarea id = "contact-message" placeholder = "Message"></textarea>
                 <button type = "enter">Enter</button>

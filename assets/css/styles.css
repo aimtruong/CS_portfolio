@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #f79292cb;
+    --secondary-color: #ffcb8fcb;
+    --tertiary-color: #a57946ec;
+    --background-color: #f3f2f2ff;
+}
+
+body{
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    padding: 60px;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.flex-row{
+    display: flex;
+}
+
+title{
+    background-color: var(--primary-color);
+    padding: 60px;
+}
+
+.section-title{
+    background-color: var(--tertiary-color);
+    border-bottom: 3px solid;
+    color: white;
+    font-size: 30px;
+    padding: 10px 0 10px 10px;
+    text-align: left;
+    width: 25%;
+}
+
+
+/* Header Style */
+header{
+    padding: 60px;
+    text-align: right;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav{
+    margin: 7px 0;
+}
+
+header nav ul{
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+header nav ul li a{
+    font-size: 1.55vw;
+    font-weight: lighter;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover{
+    background: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+    text-decoration: underline;
+}
+/* End Header Style */
+
+
+/* About Me Style */
+
+/* End About Me Style */
+
+
+
+/* Works Style */
+
+/* End Works Style */
+
+
+
+/* To Contact Style */
+.form-input{
+    background-color: rgba(255,255,255);
+    border: 1px solid;
+    border-radius: 10px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 7px 15px;
+    width: 100%;
+}
+
+.contact-form button{
+    background-color: var(--primary-color);
+}
+/* End To Contact Style */
+
+
+/* Footer Style */
+footer{
+    padding: 60px;
+    text-align: right;
+}
+footer h4{
+    font-size: 20px;
+    margin: 0;
+}
+/* End Footer Style */
+
+
+/* Media query for SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px){
+    header{
+        padding-bottom: 0;
+        position: relative;
+        justify-content: center;
+    }
+
+    header h1{
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav ul{
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .hero-cta, .hero-form{
+        width: 100%;
+    }
+
+    .hero-cta{
+        text-align: center;
+    }
+
+    .section-title{
+        width: 80%;
+    }
+
+    .trainer{
+        flex: 0 70%;
+    }
+
+    .contact-info iframe{
+        flex: 1 100%;
+    }
+
+    footer h2, footer div{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Media query for TABLETS AND SMALLER */
+@media screen and (max-width: 768px){
+    section{
+        padding: 30px 15px;
+    }
+
+    .step h3{
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .step-info{
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .step-img{
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .step-text{
+        flex: 100%;
+    }
+}
+
+/* Media query for MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px){
+    .hero-form button{
+        width: 100%;
+    }
+
+    .section-title{
+        width: 95%;
+    }
+
+    .contact-me{
+        text-align: center;
+    }
+
+    .contact-me > * {
+        flex: 0 100%;
+    }
+
+    .contact-me{
+        order: 3;
+    }
+}
