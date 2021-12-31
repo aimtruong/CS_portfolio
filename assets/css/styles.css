@@ -46,13 +46,12 @@ section{
     background-color: var(--background-color);
 }
 
-
 /* Header Style */
 header{
     padding: 60px;
     text-align: right;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0;
 }
 
@@ -85,10 +84,6 @@ header nav ul{
 
 
 /* Title Name Style */
-.title{
-
-}
-
 .title-name{
     background-color: var(--primary-color);
     padding: 50px;
@@ -101,42 +96,50 @@ header nav ul{
 
 
 /* About Me Style */
-
+#about-me img{
+    height: 200px;
+}
 /* End About Me Style */
 
 
 /* Works Style */
+#my-works{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.best-work{
+    padding: 30px;
+}
+
+.best-work img{
+    height: 250px;
+}
+
+.work{
+    padding: 30px;
+    height: 200px;
+}
+
 
 /* End Works Style */
 
 
 /* To Contact Style */
-
-.form-input{
-    background-color: white;
-    border: 1px solid;
-    border-radius: 10px;
-    display: block;
-    font-size: 16px;
-    margin-bottom: 15px;
-    padding: 7px 15px;
-    width: 50%;
-}
-
 .contact-info{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.contact-form button{
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    padding: 15px 0;
-    text-align: center;
-    width: 50%;
+.contact-info > *{
+    flex: 1;
+    margin: 15px;
+}
+
+#contact-me img{
+    height: 100px;
 }
 
 .contact-form input, .contact-form textarea{
@@ -149,6 +152,16 @@ header nav ul{
     margin-top: 5px;
     padding: 7px 15px;
     width: 60%;
+}
+
+.contact-form button{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 15px 0;
+    text-align: center;
+    width: 50%;
 }
 /* End To Contact Style */
 
