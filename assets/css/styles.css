@@ -122,6 +122,7 @@ header nav ul{
 .best-work{
     display: inline-block;
     padding: 30px;
+    padding-bottom: 0px;
     margin: 0 25%;
 }
 
@@ -260,23 +261,21 @@ footer h4{
 
 /* Media query for MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px){
-    .hero-form button{
-        width: 100%;
-    }
-
-    .section-title{
-        width: 95%;
-    }
-
-    .contact-me{
+    .about-info{
+        display: block;
+        flex-wrap: wrap;
         text-align: center;
     }
-
-    .contact-me > * {
-        flex: 0 100%;
+    
+    .about-info img{
+        margin-right: 50px;
     }
 
-    .contact-me{
-        order: 3;
+    .best-work{
+        padding-left: 3px;
+    }
+
+    footer h4{
+        width: 70%;
     }
 }
