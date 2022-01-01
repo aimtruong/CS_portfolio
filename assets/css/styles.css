@@ -5,10 +5,10 @@
 }
 
 :root{
+    --background-color: #f3f2f2ff;
     --primary-color: #f79292cb;
     --secondary-color: #ffcb8fcb;
     --tertiary-color: #a57946ec;
-    --background-color: #f3f2f2ff;
 }
 
 body{
@@ -48,17 +48,17 @@ section{
 
 /* Header Style */
 header{
-    padding: 60px;
-    text-align: right;
     font-size: 36px;
     font-weight: normal;
     margin: 0;
+    padding: 60px;
+    text-align: right;
 }
 
 header a{
     color: black;
-    text-decoration: none;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 header nav{
@@ -66,13 +66,13 @@ header nav{
 }
 
 header nav ul li a{
-    font-size: 40px;
-    padding: 10px 15px;
     background: linear-gradient(to left, var(--secondary-color), var(--secondary-color));
     background-repeat: no-repeat;
     background-size: 0 100%;
-    transition: background-size 1s 0s;
     display: inline-block;
+    font-size: 40px;
+    padding: 10px 15px;
+    transition: background-size 1s 0s;
     /* credit to Fabrizio Calderan on StackOverflow 
     (https://stackoverflow.com/questions/52641628/sweep-to-the-right-transition-css) */
 }
@@ -92,9 +92,9 @@ header nav ul{
 /* Title Name Style */
 .title-name{
     background-color: var(--primary-color);
-    padding: 50px;
     display: block;
     margin: 0 auto;
+    padding: 50px;
     text-align: center;
     width: fit-content;
 }
@@ -121,9 +121,9 @@ header nav ul{
 /* Works Style */
 .best-work{
     display: inline-block;
+    margin: 0 25%;
     padding: 30px;
     padding-bottom: 0px;
-    margin: 0 25%;
 }
 
 .best-work img{
@@ -131,8 +131,8 @@ header nav ul{
 }
 
 .work{
-    padding: 30px;
     height: 200px;
+    padding: 30px;
 }
 
 .works-info{
@@ -140,21 +140,43 @@ header nav ul{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.best-site-name{
+    background: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: auto;
+    padding: 5px;
+    text-align: center;
+    width: fit-content;
+}
+
+.site-name{
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-left: auto;
+    padding: 5px;
+    text-align: center;
+    width: fit-content;
+}
 /* End Works Style */
 
 
 /* To Contact Style */
 #contact-me img{
-    height: 100px;
-    border-width: 3px;
     border: black;
-    margin-top: 20px;
+    border-width: 3px;
+    height: 100px;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .contact-info{
-    display: flex;
     align-items: center;
+    display: flex;
     margin-left: 60px;
 }
 
@@ -163,14 +185,14 @@ header nav ul{
 }
 
 .contact-button{
+    background: var(--primary-color);
     border: none;
     border-radius: 10px;
-    background: var(--primary-color);
     font-size: 16px;
+    margin-left: 60px;
     padding: 15px 0;
     text-align: center;
     width: 50%;
-    margin-left: 60px;
 }
 
 .contact-button:hover{
@@ -178,27 +200,27 @@ header nav ul{
 }
 
 .contact-button a{
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 /* End To Contact Style */
 
 
 /* Footer Style */
 footer{
-    padding: 10px;
-    margin-top: 30px;
-    text-align: right;
     background-color: var(--background-color);
+    margin-top: 30px;
+    padding: 10px;
+    text-align: right;
     
 }
 
 footer h4{
-    font-size: 15px;
-    padding: 5px;
-    display: block;
-    margin-left: 70%;
     background-color: var(--secondary-color);
+    display: block;
+    font-size: 15px;
+    margin-left: 70%;
+    padding: 5px;
 }
 /* End Footer Style */
 
@@ -215,15 +237,15 @@ footer h4{
     }
 
     .about-info{
-        margin-top: 20px;
         margin-left: 50px;
         margin-right: 50px;
+        margin-top: 20px;
     }
 
     .works-info{
-        margin-top: 40px;
         margin-left: 50px;
         margin-right: 50px;
+        margin-top: 40px;
     }
 
     .contact-info{
@@ -237,8 +259,8 @@ footer h4{
     }
 
     footer h4{
-        width: 40%;
         margin-left: auto;
+        width: 40%;
     }
 }
 
@@ -250,8 +272,8 @@ footer h4{
 
     .best-work{
         display: block;
-        text-align: center;
         margin: 0 auto;
+        text-align: center;
     }
 
     footer h4{
