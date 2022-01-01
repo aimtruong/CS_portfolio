@@ -55,6 +55,12 @@ header{
     margin: 0;
 }
 
+header a{
+    color: black;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
 header nav{
     margin: 7px 0;
 }
@@ -98,19 +104,25 @@ header nav ul{
 /* About Me Style */
 #about-me img{
     height: 200px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.about-info{
+    display: flex;
+}
+
+.about-info p{
+    margin: 20px 60px;
 }
 /* End About Me Style */
 
 
 /* Works Style */
-#my-works{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .best-work{
+    display: inline-block;
     padding: 30px;
+    margin: 0 25%;
 }
 
 .best-work img{
@@ -122,46 +134,51 @@ header nav ul{
     height: 200px;
 }
 
-
+.works-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 /* End Works Style */
 
 
 /* To Contact Style */
-.contact-info{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.contact-info > *{
-    flex: 1;
-    margin: 15px;
-}
-
 #contact-me img{
     height: 100px;
+    border-width: 3px;
+    border: black;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.contact-form input, .contact-form textarea{
-    background-color: rgba(255,255,255,0.75);
-    border: 1px solid black;
-    border-radius: 10px;
-    display: block;
-    font-size: 16px;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    padding: 7px 15px;
-    width: 60%;
+.contact-info{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
 }
 
-.contact-form button{
-    background-color: var(--primary-color);
+.contact-info p{
+    padding: 30px;
+}
+
+.contact-button{
     border: none;
     border-radius: 10px;
+    background: var(--primary-color);
     font-size: 16px;
     padding: 15px 0;
     text-align: center;
     width: 50%;
+    margin-left: 60px;
+}
+
+.contact-button:hover{
+    background: var(--secondary-color);
+}
+
+.contact-button a{
+    text-decoration: none;
+    color: black;
 }
 /* End To Contact Style */
 
@@ -171,13 +188,15 @@ footer{
     padding: 10px;
     margin-top: 30px;
     text-align: right;
+    background-color: var(--background-color);
     
 }
+
 footer h4{
     font-size: 15px;
     padding: 5px;
     display: block;
-    margin-left: 63%;
+    margin-left: 70%;
     background-color: var(--secondary-color);
 }
 /* End Footer Style */
@@ -186,74 +205,55 @@ footer h4{
 /* Media query for SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px){
     header{
-        padding-bottom: 0;
         position: relative;
-        justify-content: center;
-    }
 
-    header h1{
-        text-align: center;
-        width: 100%;
-    }
-
-    header nav ul{
-        justify-content: center;
-        margin-top: 20px;
-        width: 100%;
-    }
-
-    .hero-cta, .hero-form{
-        width: 100%;
-    }
-
-    .hero-cta{
-        text-align: center;
     }
 
     .section-title{
-        width: 80%;
-    }
-
-    .trainer{
-        flex: 0 70%;
-    }
-
-    .contact-info iframe{
-        flex: 1 100%;
-    }
-
-    footer h2, footer div{
-        text-align: center;
         width: 100%;
+    }
+
+    .about-info{
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .works-info{
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .contact-info{
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .contact-button{
+        display: block;
+        margin: 0 auto;
     }
 }
 
 /* Media query for TABLETS AND SMALLER */
 @media screen and (max-width: 768px){
-    section{
-        padding: 30px 15px;
+    .about-info{
+        display: inline;
+        margin: 0 10px;
     }
 
-    .step h3{
-        flex: 1 100%;
-        text-align: center;
+    .about-info img{
+        margin-top: 20px;
     }
 
-    .step-info{
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
+    .best-work{
+        margin: 0 40px;
     }
 
-    .step-img{
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .step-text{
-        flex: 100%;
+    .contact-info{
+        margin-top: 25px;
     }
 }
 
