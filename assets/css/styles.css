@@ -244,20 +244,17 @@ footer h4{
 /* Media query for TABLETS AND SMALLER */
 @media screen and (max-width: 768px){
     .about-info{
-        display: inline;
-        margin: 0 10px;
-    }
-
-    .about-info img{
-        margin-top: 20px;
+        margin: 0 auto;
     }
 
     .best-work{
-        margin: 0 40px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
     }
 
-    .contact-info{
-        margin-top: 25px;
+    footer h4{
+        width: 50%;
     }
 }
 
