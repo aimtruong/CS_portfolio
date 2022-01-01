@@ -90,6 +90,11 @@ header nav ul{
 
 
 /* Title Name Style */
+.title{
+    display: flex;
+    align-items: center;
+}
+
 .title-name{
     background-color: var(--primary-color);
     display: block;
@@ -266,6 +271,10 @@ footer h4{
 
 /* Media query for TABLETS AND SMALLER */
 @media screen and (max-width: 768px){
+    .title hr{
+        width: 20%;
+    }
+    
     .about-info{
         margin: 0 auto;
     }
@@ -276,6 +285,10 @@ footer h4{
         text-align: center;
     }
 
+    .best-site-name{
+        margin-right: 80px;
+    }
+
     footer h4{
         width: 50%;
     }
@@ -283,6 +296,10 @@ footer h4{
 
 /* Media query for MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px){
+    .title hr{
+        width: 10%;
+    }
+
     .about-info{
         display: block;
         flex-wrap: wrap;
@@ -295,6 +312,10 @@ footer h4{
 
     .best-work{
         padding-left: 3px;
+    }
+
+    .best-site-name{
+        margin-right: 0;
     }
 
     footer h4{
