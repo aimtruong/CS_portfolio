@@ -131,12 +131,13 @@ header nav ul{
 }
 
 .best-work img{
-    height: 250px;
+    height: 300px;
 }
 
-.work{
+.work img{
     height: 200px;
-    padding: 30px;
+    width: 300px;
+    padding: 10px;
 }
 
 .works-info{
