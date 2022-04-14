@@ -152,7 +152,7 @@ header nav ul{
 }
 
 .best-site-name{
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     border: none;
     border-radius: 10px;
     font-size: 20px;
@@ -165,7 +165,7 @@ header nav ul{
 }
 
 .site-name{
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 10px;
     font-size: 13px;
@@ -194,25 +194,27 @@ header nav ul{
     margin-left: 60px;
 }
 
-.contact-info p{
-    padding: 30px;
+.contact-buttons{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contact-buttons a{
+    text-decoration: none;
 }
 
 .contact-button{
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     border: none;
     border-radius: 10px;
+    color: black;
     font-size: 16px;
-    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-left: 100px;
     padding: 15px 0;
     text-align: center;
-    width: 50%;
-    margin-bottom: 10px;
-}
-
-.contact-button a{
-    color: black;
     text-decoration: none;
+    width: 80%;
 }
 
 .contact-button:hover{
@@ -268,9 +270,10 @@ footer h4{
         margin-right: 50px;
     }
 
-    .contact-button{
+    .contact-buttons{
         display: block;
-        margin: 0 auto;
+        margin: 0 150px;
+        width: 40%;
     }
 
     footer h4{
@@ -297,6 +300,19 @@ footer h4{
 
     .best-site-name{
         margin-right: 80px;
+    }
+
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-info img{
+        margin-right: 20px;
+    }
+
+    .contact-buttons{
+        margin: 10px 100px;
     }
 
     footer h4{
@@ -334,10 +350,17 @@ footer h4{
         height: 100px;
     }
 
-    .contact-info{
+    .contact{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+    }
+
+    .contact-info img{
+        margin-right: 20px;
+    }
+
+    .contact-buttons{
+        margin: 10px 50px;
     }
 
     footer h4{
