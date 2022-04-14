@@ -123,11 +123,10 @@ header nav ul{
 
 
 /* Works Style */
-.best-work{
-    display: inline-block;
-    margin: 0 25%;
-    padding: 30px;
-    padding-bottom: 0px;
+
+#my-works{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .best-work img{
@@ -137,12 +136,11 @@ header nav ul{
 .work img{
     height: 200px;
     width: 300px;
-    padding: 10px;
 }
 
 .works-info{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
 }
 
@@ -151,13 +149,18 @@ header nav ul{
     flex-wrap: wrap;
 }
 
+.best-work-button, .work-button{
+    display: flex;
+    flex-direction: row;
+}
+
 #and-more{
     color: rgba(0, 0, 0, 0.582);
     font-weight: bold;
 }
 
 .github{
-    margin: 0 300px;
+    margin: 0 100px;
 
 }
 
@@ -167,7 +170,7 @@ header nav ul{
     border-radius: 10px;
     font-size: 20px;
     margin-left: auto;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     width: fit-content;
     color: black;
@@ -180,7 +183,7 @@ header nav ul{
     border-radius: 10px;
     font-size: 13px;
     margin-left: auto;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     width: fit-content;
     text-decoration: none;
@@ -269,7 +272,12 @@ footer h4{
         margin-top: 20px;
     }
 
+    .best-work{
+        margin-top: 20px;
+    }
+
     .works-info{
+        flex-wrap: wrap;
         margin-left: 50px;
         margin-right: 50px;
         margin-top: 40px;
@@ -346,13 +354,17 @@ footer h4{
         text-align: center;
     }
 
-    .best-work{
-        padding: 0;
+    #my-works{
+        justify-content: center;
     }
-
+    
     .best-work img{
         margin-top: 30px;
         height: 150px;
+    }
+
+    .best-work-button a{
+        font-size: 13px;
     }
 
     .best-site-name{
