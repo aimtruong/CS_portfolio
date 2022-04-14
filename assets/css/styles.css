@@ -151,6 +151,15 @@ header nav ul{
     flex-wrap: wrap;
 }
 
+#and-more{
+    color: black;
+}
+
+.github{
+    margin: 0 300px;
+
+}
+
 .best-site-name{
     background-color: var(--primary-color);
     border: none;
@@ -263,6 +272,10 @@ footer h4{
         margin-left: 50px;
         margin-right: 50px;
         margin-top: 40px;
+    }
+
+    .github{
+        margin: 0 150px;
     }
 
     .contact-info{
